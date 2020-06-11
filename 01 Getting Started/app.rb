@@ -21,7 +21,7 @@ class GiftBasket < Sinatra::Base
 
     # construct the installation URL and redirect the merchant
     install_url = "http://#{shop}/admin/oauth/authorize?client_id=#{API_KEY}"\
-                "&scope=#{scopes}&redirect_uri=https://#{APP_URL}//giftbasket/auth"
+                "&scope=#{scopes}&redirect_uri=https://#{APP_URL}/auth"
 
     # redirect to the install_url
     redirect install_url
